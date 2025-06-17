@@ -1,0 +1,181 @@
+{
+    "editor.dropIntoEditor.preferences": [
+        
+    ],
+
+    // 🌈 Editor & Theme Settings
+    
+    "workbench.colorTheme": "Red",
+    "editor.fontSize": 13,
+    "files.autoSave": "afterDelay",
+    "workbench.preferredDarkColorTheme": "Red",
+
+    // 🔦 Editor Highlighting
+
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#ff00007d",
+        "editor.lineHighlightBackground": "#007206b7",
+
+        // 💻 Terminal Customisation
+
+        "terminal.integrated.defaultProfile.windows": "Command Prompt",
+        "terminal.integrated.fontSize": 13,
+        "terminal.integrated.cursorStyle": "block",
+        "terminal.integrated.cursorBlinking": true,
+        "terminal.integrated.minimumContrastRatio": 4.5,
+
+        // Terminal viewport and text
+        "terminal.background": "#290101",       // Dark background
+        "terminal.foreground": "#FFFFFF",       // White text
+        "terminal.selectionBackground": "#b50000", // Red highlight when selecting
+        "terminalCursor.foreground": "#FFD700", // Gold cursor
+        "terminalCursor.background": "#1E1E1E",
+
+        // ANSI base colours
+        "terminal.ansiBlack": "#000000",
+        "terminal.ansiRed": "#FF5555",
+        "terminal.ansiGreen": "#50FA7B",
+        "terminal.ansiYellow": "#F1FA8C",
+        "terminal.ansiBlue": "#61AFEF",
+        "terminal.ansiMagenta": "#C678DD",
+        "terminal.ansiCyan": "#8BE9FD",
+        "terminal.ansiWhite": "#F8F8F2",
+
+        // Bright versions
+        "terminal.ansiBrightBlack": "#5C6370",
+        "terminal.ansiBrightRed": "#FF6E6E",
+        "terminal.ansiBrightGreen": "#69FF94",
+        "terminal.ansiBrightYellow": "#FFFFA5",
+        "terminal.ansiBrightBlue": "#D6ACFF",
+        "terminal.ansiBrightMagenta": "#FF92DF",
+        "terminal.ansiBrightCyan": "#A4FFFF",
+        "terminal.ansiBrightWhite": "#FFFFFF"
+    },
+
+
+    "editor.tokenColorCustomizations": {
+
+        // 🌟 Custom syntax colours for different types of code elements
+
+        "variables": "#FFD700",  // 🟡 Gold for variables
+        "functions": "#00FFFF",  // 🔵 Cyan for functions
+        "keywords": "#FF69B4",   // 💗 Hot pink for keywords
+        "strings": "#32CD32",    // 🍃 Lime green for strings
+        "numbers": "#FFA500",    // 🟠 Orange for numbers
+        "types": "#00FF7F",      // 🌱 Spring green for types
+        "comments": "#808080",   // 🔘 Grey for comments
+
+        "textMateRules": [
+
+            // 📌 Standard programming syntax colours
+
+            { "scope": "variable", "settings": { "foreground": "#FFD700" } },
+            { "scope": "function", "settings": { "foreground": "#00FFFF" } },
+            { "scope": "keyword", "settings": { "foreground": "#ff003c" } },
+            { "scope": "string", "settings": { "foreground": "#32CD32" } },
+            { "scope": "constant.numeric", "settings": { "foreground": "#FFA500" } },
+            { "scope": "storage.type", "settings": { "foreground": "#00FF7F" } },
+            { "scope": "comment", "settings": { "foreground": "#808080" } },
+
+            // 🎨 CSS syntax highlighting
+
+            { "scope": "meta.selector.css entity.name.tag", "settings": { "foreground": "#AA5507" } },
+            { "scope": "meta.selector.css entity.other.attribute-name.id", "settings": { "foreground": "#FEC758" } },
+            { "scope": "meta.selector.css entity.other.attribute-name.class", "settings": { "foreground": "#41A83E" } },
+            { "scope": "support.type.property-name.css", "settings": { "foreground": "#96DD3B" } },
+            { 
+                "scope": ["meta.property-group support.constant.property-value.css", "meta.property-value support.constant.property-value.css"],
+                "settings": { "foreground": "#FFE862", "fontStyle": "italic" }
+            },
+            { 
+                "scope": ["meta.property-value support.constant.named-color.css", "meta.property-value constant"],
+                "settings": { "foreground": "#FFE862" }
+            },
+            { "scope": "meta.preprocessor.at-rule keyword.control.at-rule", "settings": { "foreground": "#FD6209" } },
+            { "scope": "meta.constructor.argument.css", "settings": { "foreground": "#EC9799" } },
+
+            // 🔥 **High-Contrast HTML Syntax Colours**
+
+            {
+                "scope": "entity.name.tag", 
+                "settings": { "foreground": "#FF5555" } // 🔴 Bright Red for HTML tags
+            },
+            {
+                "scope": "punctuation.definition.tag",
+                "settings": { "foreground": "#A020F0" } // 🟣 Deep Purple for < > symbols
+            },
+            {
+                "scope": "entity.other.attribute-name",
+                "settings": { "foreground": "#E6B800" } // 🟡 Bright Yellow for attributes (class, id, href)
+            },
+            {
+                "scope": "string.quoted.double.html",
+                "settings": { "foreground": "#00BFFF" } // 🔵 Electric Blue for attribute values ("home.html")
+            },
+            {
+                "scope": "meta.tag.sgml.doctype.html",
+                "settings": { "foreground": "#00CED1", "fontStyle": "italic" } // 🌊 Teal for DOCTYPE
+            },
+            {
+                "scope": "comment.block.html",
+                "settings": { "foreground": "#A9A9A9", "fontStyle": "italic" } // 🟤 Lighter Grey for HTML comments
+            },
+            {
+                "scope": "meta.embedded.block.js",
+                "settings": { "foreground": "#1E90FF" } // 🔵 Bold Blue for JS inside HTML <script>
+            },
+            {
+                "scope": "meta.embedded.line.js",
+                "settings": { "foreground": "#1E90FF" } // 🔵 Bold Blue for inline JS in event attributes
+            },
+
+            // 💡 PYTHON HIGHLIGHTING RULES
+
+            {
+                "scope": "entity.name.function.python",
+                "settings": { "foreground": "#00FFFF" } // Cyan for function names
+            },
+            {
+                "scope": "variable.parameter.function.python",
+                "settings": { "foreground": "#FFD700" } // Gold for parameters
+            },
+            {
+                "scope": "keyword.control.flow.python",
+                "settings": { "foreground": "#FF69B4", "fontStyle": "bold" } // Hot pink for flow keywords (if, else, return)
+            },
+            {
+                "scope": "keyword.operator.python",
+                "settings": { "foreground": "#FF6E00" } // Orange for operators (+, -, =)
+            },
+            {
+                "scope": "constant.numeric.python",
+                "settings": { "foreground": "#FFA500" } // Orange for numbers
+            },
+            {
+                "scope": "string.quoted.single.python, string.quoted.double.python",
+                "settings": { "foreground": "#32CD32" } // Lime green for strings
+            },
+            {
+                "scope": "comment.line.number-sign.python",
+                "settings": { "foreground": "#A9A9A9", "fontStyle": "italic" } // Light grey italic for comments
+            },
+            {
+                "scope": "storage.type.function.python",
+                "settings": { "foreground": "#00FF7F", "fontStyle": "bold" } // Spring green for function defs
+            },
+            {
+                "scope": "support.function.builtin.python",
+                "settings": { "foreground": "#61AFEF" } // Blue for built-in functions (print, len)
+            },
+            {
+                "scope": "entity.name.class.python",
+                "settings": { "foreground": "#FF5555", "fontStyle": "bold" } // Bright red for class names
+            },
+            {
+                "scope": "meta.function.decorator.python",
+                "settings": { "foreground": "#C678DD" } // Purple for decorators (@staticmethod)
+            }
+
+        ]
+    }
+}
