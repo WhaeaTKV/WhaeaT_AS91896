@@ -1,0 +1,56 @@
+Introduction:
+_____________________________________________________________________________________________________
+"Hello and welcome to this game of the century!"
+"This is a game where you choose your own adventure."
+"To lock in your choices, write your answer in the space provided in the terminal."
+"You can use lower case or upper case."
+
+"Good luck!"
+_____________________________________________________________________________________________________
+
+
+
+1st Encounter:
+You finish your drink at the Tavern and wander out the front door. As you do, you stumble and hit the bouncer at the door.
+He turns to you angrily and threatens to knock you out.
+
+What do you do?
+RUN or FIGHT
+Your answer: 
+
+
+
+
+
+
+
+DEFINE list of possible outcomes: ["Strike", "Ball", "Single", "Double", "Triple", "Home Run", "Out"]
+SET player score to 0
+SET number of outs to 0
+
+
+WHILE outs are less than 3:
+    DISPLAY "Press Enter to swing!"
+    WAIT for user input
+
+    RANDOMLY choose outcome from the list
+    DISPLAY the outcome
+
+    IF outcome is "Strike" OR "Ball":
+        DISPLAY "No hit!"
+        CONTINUE to next pitch
+
+    IF outcome is "Out":
+        INCREASE outs by 1
+        DISPLAY number of outs
+
+    IF outcome is "Single":
+        ADD 1 point to score
+    IF outcome is "Double":
+        ADD 2 points to score
+    IF outcome is "Triple":
+        ADD 3 points to score
+    IF outcome is "Home Run":
+        ADD 4 points to score
+
+    DISPLAY current score
